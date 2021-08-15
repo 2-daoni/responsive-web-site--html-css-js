@@ -32,8 +32,6 @@
   background: #ee0979;
   background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
   background: linear-gradient(to right, #ff6a00, #ee0979);
-
-  background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -91,14 +89,17 @@
   border: none;
   outline: none;
   border-radius: 4px;
-  background-color: #ee0979;
+  background: #c04848;
+  background: -webkit-linear-gradient(to right, #480048, #c04848);
+  background: linear-gradient(to right, #480048, #c04848);
+
   color: #fff;
   font-weight: bold;
 }
 
 .btn:hover,
 .btn:focus {
-  background: #ff6a00;
+  /* background: #c04848; */
   transition: all 0.3s ease;
   transform: translateY(-0.25em);
 }
@@ -198,4 +199,57 @@
   #menu.is-active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
+
+  #menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* Main Section */
+.main {
+  background-color: #141414;
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 90vh;
+  background-color: #141414;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+}
+
+.main_content h1 {
+  font-size: 4rem;
+  background-color: #ee0979;
+  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-colr: transparent;
+  background-size: 100%;
+}
+
+.main_content h2 {
+  font-size: 4rem;
+  background: #de6262;
+  background: -webkit-linear-gradient(to right, #ffb88c, #de6262);
+  background: linear-gradient(to right, #ffb88c, #de6262);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-colr: transparent;
+  background-size: 100%;
+}
+
+.main_content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
